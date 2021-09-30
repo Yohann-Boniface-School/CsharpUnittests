@@ -2,12 +2,17 @@
 {
     public class Account
     {
+        private static int _instanceId = 0;
+
+        private int _id; 
         private int _balance;
         private string _owner;
         private string _devise;
         
-        protected Account(string owner, string devise, int balance = 0)
+        public Account(string owner, string devise, int balance = 0)
         {
+            _id = ++_instanceId;
+            
             _owner = owner;
             _devise = devise;
             _balance = balance;
@@ -30,7 +35,7 @@
 
         public int getAccountId()
         {
-            return 0;
+            return _id;
         }
     }
 }
