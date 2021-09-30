@@ -10,14 +10,14 @@ namespace Tests
         public void TestBalanceCreation0()
         {
             var account = new SavingAccount(0, "foo", "euro");
-            Assert.AreEqual(0, account.getBalance());
+            Assert.AreEqual(0, account.GetBalance());
         }
 
         [TestMethod]
         public void TestBalanceCreation500()
         {
             var account = new SavingAccount(0, "foo", "euro", 500);
-            Assert.AreEqual(500, account.getBalance());
+            Assert.AreEqual(500, account.GetBalance());
         }
     }
 }

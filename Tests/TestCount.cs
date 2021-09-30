@@ -14,7 +14,7 @@ namespace Tests
             _ = new Account("foo", "euro");
             
             var account = new SavingAccount(0, "foo", "euro");
-            Assert.AreEqual(4, account.getAccountId());
+            Assert.AreEqual(4, account.GetAccountId());
         }
     }
 }

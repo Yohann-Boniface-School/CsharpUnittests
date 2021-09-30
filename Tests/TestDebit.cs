@@ -11,7 +11,7 @@ namespace Tests
         {
             var account = new SavingAccount(0, "foo", "euro", 500);
             account.Debit(100);
-            Assert.AreEqual(400, account.getBalance());
+            Assert.AreEqual(400, account.GetBalance());
         }
         
         [TestMethod]
@@ -19,7 +19,7 @@ namespace Tests
         {
             var account = new SavingAccount(0, "foo", "euro", 500);
             account.Credit(100);
-            Assert.AreEqual(600, account.getBalance());
+            Assert.AreEqual(600, account.GetBalance());
         }
     }
 }
