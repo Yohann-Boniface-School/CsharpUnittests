@@ -16,5 +16,12 @@ namespace Tests
             var account = new SavingAccount(0, "foo", "euro");
             Assert.AreEqual(4, account.GetAccountId());
         }
+        
+        [TestMethod]
+        public void TestAccountCount()
+        {
+            var _ = new Account("foo", "euro");
+            Assert.AreEqual(1, Account.GetAccountCount());
+        }
     }
 }
