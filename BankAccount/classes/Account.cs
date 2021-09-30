@@ -37,5 +37,10 @@
         {
             return _id;
         }
+        
+        public static int GetAccountCount()
+        {
+            return _instanceCount;
+        }
     }
 }
