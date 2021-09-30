@@ -20,8 +20,9 @@ namespace Tests
         [TestMethod]
         public void TestAccountCount()
         {
+            var currentCount = Account.GetAccountCount();
             var _ = new Account("foo", "euro");
-            Assert.AreEqual(1, Account.GetAccountCount());
+            Assert.AreEqual(currentCount + 1, Account.GetAccountCount());
         }
     }
 }

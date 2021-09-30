@@ -28,19 +28,8 @@
             _balance -= amount;
         }
 
-        public int GetBalance()
-        {
-            return _balance;
-        }
-
-        public int GetAccountId()
-        {
-            return _id;
-        }
-        
-        public static int GetAccountCount()
-        {
-            return _instanceCount;
-        }
+        public int GetBalance() => _balance;
+        public int GetAccountId() => _id;
+        public static int GetAccountCount() => _instanceCount;
     }
 }
