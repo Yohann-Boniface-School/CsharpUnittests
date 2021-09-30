@@ -4,3 +4,6 @@
 # C# Binaries
 bin
 obj
+
+# Other
+*.user
