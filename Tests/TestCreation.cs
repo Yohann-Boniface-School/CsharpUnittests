@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class TestCreation
     {
         [TestMethod]
         public void TestBalanceCreation0()
