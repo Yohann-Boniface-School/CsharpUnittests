@@ -1,0 +1,6 @@
+﻿# IDE Specific
+.idea
+
+# C# Binaries
+bin
+obj
