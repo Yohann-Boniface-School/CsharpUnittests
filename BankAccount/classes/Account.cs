@@ -2,14 +2,15 @@
 {
     public class Account
     {
-        private int _balance = 0;
+        private int _balance;
         private string _owner;
         private string _devise;
-
-        protected Account(string owner, string devise)
+        
+        protected Account(string owner, string devise, int balance = 0)
         {
             _owner = owner;
             _devise = devise;
+            _balance = balance;
         }
 
         public void Credit(int amount)
